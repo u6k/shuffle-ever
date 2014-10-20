@@ -3,8 +3,10 @@
     <application>ever-shuffle</application>
     <version>${appengine.app.version}</version>
     <threadsafe>true</threadsafe>
-    
+
     <system-properties>
-        <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+        <property
+            name="java.util.logging.config.file"
+            value="WEB-INF/logging.properties" />
     </system-properties>
 </appengine-web-app>
