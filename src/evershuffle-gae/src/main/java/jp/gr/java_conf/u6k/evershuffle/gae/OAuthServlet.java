@@ -109,7 +109,7 @@ public class OAuthServlet extends HttpServlet {
             resp.sendRedirect("oauth.do?action=getAccessToken");
         } else if (accessToken != null) {
             LOG.info("Step 4 in OAuth authorization: use the access token that you obtained");
-            resp.sendRedirect("hello.do");
+            resp.sendRedirect("index.jsp");
         } else {
             LOG.severe("Unknown Step");
         }
