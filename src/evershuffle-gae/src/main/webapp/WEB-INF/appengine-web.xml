@@ -4,6 +4,8 @@
     <version>${appengine.app.version}</version>
     <threadsafe>true</threadsafe>
 
+    <sessions-enabled>true</sessions-enabled>
+
     <system-properties>
         <property
             name="java.util.logging.config.file"
