@@ -37,6 +37,9 @@
                 NoteMetadata noteMeta = noteMetaList.getNotes().get(index);
                 String noteContent = noteStoreClient.getNoteContent(noteMeta.getGuid());
         %>
+        <p>
+            <a href="index.jsp">Next Note</a>
+        </p>
         <p>Title: <%= noteMeta.getTitle() %></p>
         <p><%= noteContent %></p>
         <%
