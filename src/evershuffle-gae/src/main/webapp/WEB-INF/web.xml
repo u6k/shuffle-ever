@@ -6,14 +6,6 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
     <servlet>
-        <servlet-name>HelloServlet</servlet-name>
-        <servlet-class>jp.gr.java_conf.u6k.evershuffle.gae.HelloServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>HelloServlet</servlet-name>
-        <url-pattern>/hello.do</url-pattern>
-    </servlet-mapping>
-    <servlet>
         <servlet-name>OAuthServlet</servlet-name>
         <servlet-class>jp.gr.java_conf.u6k.evershuffle.gae.OAuthServlet</servlet-class>
     </servlet>
