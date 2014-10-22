@@ -18,6 +18,8 @@
         <title>EverShuffle</title>
     </head>
     <body>
+        <h1><a href="index.jsp">EverShuffle</a></h1>
+        <p><a href="about.jsp">About EverShuffle</a></p>
         <%
             if (session.getAttribute("accessToken") == null) {
         %>
