@@ -1,14 +1,15 @@
-<%@page import="java.util.Random"%>
-<%@page import="com.evernote.edam.notestore.NoteMetadata"%>
-<%@page import="com.evernote.edam.limits.Constants"%>
-<%@page import="com.evernote.edam.notestore.NotesMetadataList"%>
-<%@page import="com.evernote.edam.notestore.NotesMetadataResultSpec"%>
-<%@page import="com.evernote.edam.type.NoteSortOrder"%>
-<%@page import="com.evernote.edam.notestore.NoteFilter"%>
-<%@page import="com.evernote.clients.ClientFactory"%>
-<%@page import="com.evernote.clients.NoteStoreClient"%>
-<%@page import="com.evernote.auth.EvernoteAuth"%>
-<%@page import="com.evernote.auth.EvernoteService"%>
+<%@ page import="jp.gr.java_conf.u6k.evershuffle.gae.EvernoteUtil"%>
+<%@ page import="java.util.Random"%>
+<%@ page import="com.evernote.edam.notestore.NoteMetadata"%>
+<%@ page import="com.evernote.edam.limits.Constants"%>
+<%@ page import="com.evernote.edam.notestore.NotesMetadataList"%>
+<%@ page import="com.evernote.edam.notestore.NotesMetadataResultSpec"%>
+<%@ page import="com.evernote.edam.type.NoteSortOrder"%>
+<%@ page import="com.evernote.edam.notestore.NoteFilter"%>
+<%@ page import="com.evernote.clients.ClientFactory"%>
+<%@ page import="com.evernote.clients.NoteStoreClient"%>
+<%@ page import="com.evernote.auth.EvernoteAuth"%>
+<%@ page import="com.evernote.auth.EvernoteService"%>
 <%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8" session="true" %>
 <!DOCTYPE html>
 <html>
@@ -23,7 +24,7 @@
         <a href="oauth.do">Login Evernote</a>
         <%
             } else {
-                EvernoteService evernoteService = EvernoteService.SANDBOX;
+                EvernoteService evernoteService = new EvernoteUtil().getEvernoteService();
                 EvernoteAuth evernoteAuth = new EvernoteAuth(evernoteService, (String) session.getAttribute("accessToken"));
                 NoteStoreClient noteStoreClient = new ClientFactory(evernoteAuth).createNoteStoreClient();
                 

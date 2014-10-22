@@ -29,7 +29,7 @@ public class OAuthServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         OAuthProperties oauthProp = new OAuthProperties(getServletContext());
 
-        EvernoteService evernoteService = EvernoteService.SANDBOX;
+        EvernoteService evernoteService = new EvernoteUtil().getEvernoteService();
         String callbackUrl = "oauth.do?action=callbackReturn";
 
         HttpSession session = req.getSession();
