@@ -44,6 +44,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
+                        <li class="active"><a href="<%=request.getContextPath()%>/index.jsp">Home</a></li>
                         <li><a href="<%=request.getContextPath()%>/about.jsp">About</a></li>
                     </ul>
                 </div>
@@ -55,8 +56,7 @@
         <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse">
-                    <!-- <button type="button" class="btn btn-default navbar-btn">&larr; Prev</button> -->
-                    <button type="button" class="btn btn-default navbar-btn navbar-right">Next &rarr;</button>
+                    <a href="<%= request.getContextPath() %>/index.jsp" class="btn btn-default navbar-btn navbar-right">Next &rarr;</a>
                 </div>
             </div>
         </nav>
@@ -67,7 +67,15 @@
             <%
                 if (session.getAttribute("accessToken") == null) {
             %>
-            <a href="<%= request.getContextPath() %>/oauth.do">Login Evernote</a>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <h1>EverShuffleへようこそ</h1>
+                    <p style="padding-top: 30px; padding-bottom: 30px">あなたのノートを"シャッフル"して、埋もれていたノートから新しい発見をしましょう。</p>
+                    <p><a href="<%= request.getContextPath() %>/oauth.do" class="btn btn-success btn-lg"><img src="<%= request.getContextPath() %>/img/evernote-lg.png" /> Sign in Evernote</a></p>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
             <%
                 } else {
                     EvernoteService evernoteService = new EvernoteUtil().getEvernoteService();
@@ -84,10 +92,8 @@
                     NoteMetadata noteMeta = noteMetaList.getNotes().get(index);
                     String noteContent = noteStoreClient.getNoteContent(noteMeta.getGuid());
             %>
-            <p>
-                <a href="<%= request.getContextPath() %>/index.jsp">Next Note</a>
-            </p>
-            <p>Title: <%= noteMeta.getTitle() %></p>
+            <p><%= noteMeta.getTitle() %></p>
+            <hr />
             <p><%= noteContent %></p>
             <%
                 }
