@@ -100,16 +100,20 @@ public class OAuthServlet extends HttpServlet {
 
         if (requestToken == null && accessToken == null) {
             LOG.info("Step 1 in OAuth authorization: obtain an unauthorized request token from the provider");
-            resp.sendRedirect("oauth.do?action=getRequestToken");
+            resp.sendRedirect(req.getContextPath() + "/oauth.do?action=getRequestToken");
         } else if (requestToken != null && verifier == null && accessToken == null) {
             LOG.info("Step 2 in OAuth authorization: redirect the user to the provider to authorize the request token");
             resp.sendRedirect(evernoteService.getAuthorizationUrl(requestToken));
         } else if (requestToken != null && verifier != null && accessToken == null) {
             LOG.info("Step 3 in OAuth authorization: exchange the authorized request token for an access token");
-            resp.sendRedirect("oauth.do?action=getAccessToken");
+            resp.sendRedirect(req.getContextPath() + "/oauth.do?action=getAccessToken");
         } else if (accessToken != null) {
             LOG.info("Step 4 in OAuth authorization: use the access token that you obtained");
-            resp.sendRedirect("index.jsp");
+            if (!"mobile".equals(session.getAttribute("mode"))) {
+                resp.sendRedirect(req.getContextPath() + "/index.jsp");
+            } else {
+                resp.sendRedirect(req.getContextPath() + "/m/index.jsp");
+            }
         } else {
             LOG.severe("Unknown Step");
         }
