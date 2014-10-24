@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1><a href="<%= request.getContextPath() %>/index.jsp">EverShuffle</a></h1>
-        <p>Version 0.2.0</p>
+        <p>Version 0.2.1</p>
         <hr />
         <p>Twitter: <a href="https://twitter.com/u6k_yu1">@u6k_yu1</a></p>
         <p>Blog: <a href="http://u6k-apps.blogspot.jp/">u6k Apps開発ログ</a></p>
