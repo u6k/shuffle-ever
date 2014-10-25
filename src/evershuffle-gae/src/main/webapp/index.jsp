@@ -15,14 +15,14 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>EverShuffle</title>
+        <title>ShuffleEver</title>
         <%
             session.setAttribute("mode", "pc");
         %>
     </head>
     <body>
-        <h1><a href="<%= request.getContextPath() %>/index.jsp">EverShuffle</a></h1>
-        <p><a href="<%= request.getContextPath() %>/about.jsp">About EverShuffle</a></p>
+        <h1><a href="<%= request.getContextPath() %>/index.jsp">ShuffleEver</a></h1>
+        <p><a href="<%= request.getContextPath() %>/about.jsp">About ShuffleEver</a></p>
         <%
             if (session.getAttribute("accessToken") == null) {
         %>

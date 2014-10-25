@@ -6,7 +6,7 @@
         <title>EverShuffle</title>
     </head>
     <body>
-        <h1><a href="<%= request.getContextPath() %>/index.jsp">EverShuffle</a></h1>
+        <h1><a href="<%= request.getContextPath() %>/index.jsp">ShuffleEver</a></h1>
         <p>Version 0.2.1</p>
         <hr />
         <p>Twitter: <a href="https://twitter.com/u6k_yu1">@u6k_yu1</a></p>
