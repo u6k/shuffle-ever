@@ -9,7 +9,7 @@
     <version>0.2.1</version>
 
     <groupId>jp.gr.java_conf.u6k</groupId>
-    <artifactId>evershuffle-gae</artifactId>
+    <artifactId>shuffle_ever-gae</artifactId>
 
     <properties>
         <appengine.app.version>development</appengine.app.version>
