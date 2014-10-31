@@ -14,6 +14,15 @@
         <url-pattern>/oauth.do</url-pattern>
     </servlet-mapping>
 
+    <filter>
+        <filter-name>WebBrowserCacheControlFilter</filter-name>
+        <filter-class>jp.gr.java_conf.u6k.evershuffle.gae.WebBrowserCacheControlFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>WebBrowserCacheControlFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
