@@ -1,4 +1,4 @@
-<%@ page import="jp.gr.java_conf.u6k.evershuffle.gae.EvernoteUtil"%>
+<%@ page import="jp.gr.java_conf.u6k.shuffle_ever.gae.EvernoteUtil"%>
 <%@ page import="java.util.Random"%>
 <%@ page import="com.evernote.edam.notestore.NoteMetadata"%>
 <%@ page import="com.evernote.edam.limits.Constants"%>
@@ -15,7 +15,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>EverShuffle</title>
+        <title>ShuffleEver</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="format-detection" content="telephone=no" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
@@ -42,7 +42,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<%=request.getContextPath()%>/index.jsp">EverShuffle</a>
+                    <a class="navbar-brand" href="<%=request.getContextPath()%>/index.jsp">ShuffleEver</a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
@@ -72,7 +72,7 @@
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <h1>EverShuffleへようこそ</h1>
+                    <h1>ShuffleEverへようこそ</h1>
                     <p style="padding-top: 30px; padding-bottom: 30px">あなたのノートを"シャッフル"して、埋もれていたノートから新しい発見をしましょう。</p>
                     <p><a href="<%= request.getContextPath() %>/oauth.do" class="btn btn-success btn-lg"><img src="<%= request.getContextPath() %>/img/evernote-lg.png" /> Sign in Evernote</a></p>
                 </div>

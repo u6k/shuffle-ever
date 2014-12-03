@@ -8,8 +8,8 @@
     <packaging>war</packaging>
     <version>0.2.1</version>
 
-    <groupId>jp.gr.java_conf.u6k</groupId>
-    <artifactId>evershuffle-gae</artifactId>
+    <groupId>jp.gr.java_conf.u6k.shuffle_ever</groupId>
+    <artifactId>shuffle-ever-gae</artifactId>
 
     <properties>
         <appengine.app.version>development</appengine.app.version>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.google.appengine</groupId>
             <artifactId>appengine-api-1.0-sdk</artifactId>
-            <version>1.9.13</version>
+            <version>1.9.15</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -41,13 +41,13 @@
         <dependency>
             <groupId>com.google.appengine</groupId>
             <artifactId>appengine-testing</artifactId>
-            <version>1.9.13</version>
+            <version>1.9.15</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.google.appengine</groupId>
             <artifactId>appengine-api-stubs</artifactId>
-            <version>1.9.13</version>
+            <version>1.9.15</version>
             <scope>test</scope>
         </dependency>
 
@@ -108,7 +108,7 @@
             <plugin>
                 <groupId>com.google.appengine</groupId>
                 <artifactId>appengine-maven-plugin</artifactId>
-                <version>1.9.13</version>
+                <version>1.9.15</version>
                 <configuration>
                     <enableJarClasses>false</enableJarClasses>
                 </configuration>

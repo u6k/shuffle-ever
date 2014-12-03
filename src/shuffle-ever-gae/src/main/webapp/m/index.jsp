@@ -1,4 +1,4 @@
-<%@ page import="jp.gr.java_conf.u6k.evershuffle.gae.EvernoteUtil"%>
+<%@ page import="jp.gr.java_conf.u6k.shuffle_ever.gae.EvernoteUtil"%>
 <%@ page import="java.util.Random"%>
 <%@ page import="com.evernote.edam.notestore.NoteMetadata"%>
 <%@ page import="com.evernote.edam.limits.Constants"%>
@@ -15,7 +15,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>EverShuffle</title>
+        <title>ShuffleEver</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="format-detection" content="telephone=no" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -27,8 +27,8 @@
     </head>
     <body>
         <div class="container-fluid">
-            <h1><a href="<%= request.getContextPath() %>/m/index.jsp">EverShuffle</a></h1>
-            <p><a href="<%= request.getContextPath() %>/m/about.jsp">About EverShuffle</a></p>
+            <h1><a href="<%= request.getContextPath() %>/m/index.jsp">ShuffleEver</a></h1>
+            <p><a href="<%= request.getContextPath() %>/m/about.jsp">About</a></p>
             <%
                 if (session.getAttribute("accessToken") == null) {
             %>

@@ -7,7 +7,7 @@
 
     <servlet>
         <servlet-name>OAuthServlet</servlet-name>
-        <servlet-class>jp.gr.java_conf.u6k.evershuffle.gae.OAuthServlet</servlet-class>
+        <servlet-class>jp.gr.java_conf.u6k.shuffle_ever.gae.OAuthServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>OAuthServlet</servlet-name>
@@ -16,7 +16,7 @@
 
     <filter>
         <filter-name>WebBrowserCacheControlFilter</filter-name>
-        <filter-class>jp.gr.java_conf.u6k.evershuffle.gae.WebBrowserCacheControlFilter</filter-class>
+        <filter-class>jp.gr.java_conf.u6k.shuffle_ever.gae.WebBrowserCacheControlFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>WebBrowserCacheControlFilter</filter-name>

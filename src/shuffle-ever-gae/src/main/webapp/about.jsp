@@ -3,7 +3,7 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8" />
-        <title>EverShuffle</title>
+        <title>ShuffleEver</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="format-detection" content="telephone=no" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<%=request.getContextPath()%>/index.jsp">EverShuffle</a>
+                    <a class="navbar-brand" href="<%=request.getContextPath()%>/index.jsp">ShuffleEver</a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
@@ -38,7 +38,7 @@
         <div class="container-fluid">
             <p>Twitter: <a href="https://twitter.com/u6k_yu1">@u6k_yu1</a></p>
             <p>Blog: <a href="http://u6k-apps.blogspot.jp/">u6k Apps開発ログ</a></p>
-            <p>GitHub: <a href="https://github.com/u6k/evershuffle">u6k / evershuffle</a></p>
+            <p>GitHub: <a href="https://github.com/u6k/shuffle-ever">u6k / shuffle-ever</a></p>
             <hr />
             <p>Version 0.2.1</p>
             <hr />

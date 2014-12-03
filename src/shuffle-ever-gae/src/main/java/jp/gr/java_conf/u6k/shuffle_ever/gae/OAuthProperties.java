@@ -1,5 +1,5 @@
 
-package jp.gr.java_conf.u6k.evershuffle.gae;
+package jp.gr.java_conf.u6k.shuffle_ever.gae;
 
 import java.io.FileInputStream;
 import java.io.IOException;
